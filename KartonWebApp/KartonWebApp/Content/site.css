@@ -1,0 +1,27 @@
+﻿/* Navbar */
+
+#btnSearch {
+    height: auto;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+/* Bootstrap Overrides */
+
+.panel-heading, .panel-footer {
+    text-align: center;
+}
+
+.panel-heading {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Controls */
+
+textarea {
+    resize: none;
+    overflow: scroll;
+}

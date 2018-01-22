@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="KartonWebApp.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Karton</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Css Links -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="container-fluid">
+            <div class="row navbar navbar-default navbar-static-top">
+                <div class="col-sm-offset-1 col-sm-2">
+                    <a href="Index.aspx"><img src="Images/KartonLogo.png" alt="Karton" class="img-responsive"/></a>
+                </div>
+                <div class="col-sm-1">
+                    <asp:Label ID="lblWelcome" runat="server"></asp:Label>
+                </div>
+                <div class="col-sm-4">
+                    <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" placeholder="Search for an item..."></asp:TextBox>
+                </div>
+                <div class="col-sm-1">
+                    <button id="btnSearch" runat="server" class="form-control btn btn-success" causesvalidation="False"><span class="glyphicon glyphicon-search"></span></button>  
+                </div>
+                <div class="col-sm-1">
+                    <asp:Button ID="btnSignIn" runat="server" Text="Sign In" CssClass="form-control btn-primary" PostBackUrl="~/Login.aspx" CausesValidation="False"/>
+                </div>
+                <div class="col-sm-1">
+                    <asp:Button ID="btnCart" runat="server" Text="My Cart" CssClass="form-control btn-warning" PostBackUrl="~/Login.aspx" CausesValidation="False"/>
+                </div>
+
+                <div class="col-sm-1">
+                    <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="form-control btn-danger" CausesValidation="False" OnClick="btnLogout_Click"/>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <asp:SqlDataSource ID="sqlLogin" runat="server"></asp:SqlDataSource>
+</body>
+</html>
