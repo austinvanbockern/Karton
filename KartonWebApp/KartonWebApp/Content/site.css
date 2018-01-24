@@ -1,4 +1,10 @@
-﻿/* Navbar */
+﻿/* Body / Html */
+
+body {
+    padding-bottom: 10px;
+}
+
+/* Navbar */
 
 #btnSearch {
     height: auto;
@@ -24,4 +30,23 @@
 textarea {
     resize: none;
     overflow: scroll;
+}
+
+/* Footer */
+
+.footer {
+    padding: 10px 10px 0px 10px;
+    text-align: left;
+    font-size: .8em;
+}
+
+.no-bottom {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.negative {
+    color: lightgray;
+    background-color: #494949;
 }

@@ -22,12 +22,16 @@ namespace KartonWebApp
                 // change button visibility
                 btnSignIn.Visible = false;
                 btnLogout.Visible = true;
+                btnCreateAccount.Visible = false;
+                btnMyAccount.Visible = true;
             }
             else
             {
                 // change button visibility
                 btnSignIn.Visible = true;
                 btnLogout.Visible = false;
+                btnCreateAccount.Visible = true;
+                btnMyAccount.Visible = false;
             }
         }
 

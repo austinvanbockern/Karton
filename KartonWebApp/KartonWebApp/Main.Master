@@ -19,8 +19,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <span id="top"></span>
     <form id="form1" runat="server">
-
         <div class="container-fluid">
             <div class="row navbar navbar-default navbar-static-top">
                 <div class="col-sm-offset-1 col-sm-2">
@@ -37,6 +37,7 @@
                 </div>
                 <div class="col-sm-1">
                     <asp:Button ID="btnSignIn" runat="server" Text="Sign In" CssClass="form-control btn-primary" PostBackUrl="~/Login.aspx" CausesValidation="False"/>
+                    <asp:Button ID="btnMyAccount" runat="server" Text="My Account" CssClass="form-control btn-primary" PostBackUrl="~/MyAccount.aspx" CausesValidation="False"/>
                 </div>
                 <div class="col-sm-1">
                     <asp:Button ID="btnCart" runat="server" Text="My Cart" CssClass="form-control btn-warning" PostBackUrl="~/Login.aspx" CausesValidation="False"/>
@@ -44,6 +45,8 @@
 
                 <div class="col-sm-1">
                     <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="form-control btn-danger" CausesValidation="False" OnClick="btnLogout_Click"/>
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" CssClass="form-control btn-danger" PostBackUrl="~/CreateAccount.aspx" CausesValidation="False"/>
+
                 </div>
             </div>
         </div>
@@ -52,8 +55,39 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-    </form>
 
-    <asp:SqlDataSource ID="sqlLogin" runat="server"></asp:SqlDataSource>
+        <div class="footer panel-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1 col-sm-offset-4">
+                        <img src="Images/Karton.png" alt="Karton Logo" class="img-responsive"/>
+                    </div>                       
+                    <div class="col-sm-1">
+                        <h5>Account Help</h5>
+                        <a href="Login.aspx">Sign In</a><br />
+                        <a href="CreateAccount.aspx">Create Account</a><br />
+                        <a href="#">Recovery</a><br />
+                        <a href="#">Logout</a><br />
+                    </div> 
+                    <div class="col-sm-1">
+                        <h5>Helpful Links</h5>
+                        <a href="#">Customer Support</a><br />
+                        <a href="#">About Karton</a><br />
+                        <a href="#">Contact Us</a><br />
+                    </div>
+                    <div class="col-sm-1">
+                        <h5>Social Media</h5>
+                        <a href="www.facebook.com/Karton">Facebook</a><br />
+                        <a href="www.twitter.com/Karton">Twitter</a><br />
+                        <a href="www.myspace.com/Karton">MySpace</a><br />
+                    </div>
+                </div>
+                <br />
+                <div class="row text-center">
+                    <a href="#top">Back To Top</a>
+                </div>
+            </div>
+        </div>
+    </form>11111111`
 </body>
 </html>

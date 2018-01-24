@@ -67,6 +67,15 @@ namespace KartonWebApp {
         protected global::System.Web.UI.WebControls.Button btnSignIn;
         
         /// <summary>
+        /// btnMyAccount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMyAccount;
+        
+        /// <summary>
         /// btnCart control.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace KartonWebApp {
         protected global::System.Web.UI.WebControls.Button btnLogout;
         
         /// <summary>
+        /// btnCreateAccount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCreateAccount;
+        
+        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
@@ -92,14 +110,5 @@ namespace KartonWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
-        /// <summary>
-        /// sqlLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sqlLogin;
     }
 }
